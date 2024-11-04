@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Survey Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div>
+            <header>
+                <h1 id="title">Form Statistico</h1>
+                <p id="description">Grazie per aver scelto di raccogliere questi dati</p>
+             </header>
+             <main>
+                <form action="post" id="survey-form">
+                    <div>
+                        <label for="name" id="name-label">Inserisci il tuo nome
+                            <input type="text" id="name" placeholder="Nome" required>
+                        </label>
+                    </div>
+                    <div> 
+                        <label for="email" id="email-label">Inserisci la tua mail
+                            <input type="email" id="email" placeholder="Email" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="number" id="number-label">Inserisci la tua età
+                            <input type="number" id ="number" min="13" max="99" placeholder="Età" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="dropdown">Tipo di account
+                            <select name="dropdown" id="dropdown">
+                                <option value="privato">Privato</option>
+                                <option value="lavoro">Lavoro</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="radio-group">
+                        <p>Di che genere sei?</p>
+                        <label>
+                            <input type="radio" id="uomo" name="genere" value="uomo">
+                            Uomo
+                        </label>
+                        <label>
+                            <input type="radio" id="donna" name="genere" value="donna">
+                            Donna
+                        </label>
+                        <label>
+                            <input type="radio" id="no_spec" name="genere" value="non_spec">
+                            Preferisco non specificare
+                        </label>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <p>Come ci hai conosciuti?</p>
+                        <label>
+                            <input type="checkbox" name="provenienza" id="internet" value="internet">
+                            Internet
+                        </label>
+                        <label>
+                            <input type="checkbox" name="provenienza" id="passaparola" value="passaparola">
+                            Passaparola
+                        </label>
+                        <label>
+                            <input type="checkbox" name="provenienza" id="altro" value="altro" checked>
+                            Altro
+                        </label>
+                    </div>
+                    <div>
+                        <label for="textarea">Lasciaci un commento sull'esperienza
+                            <textarea name="commento" id="textarea" placeholder="Mi sono trovato bene..." cols="30" rows="6"></textarea>
+                        </label>
+                    </div>
+                    <div>
+                      <input type="submit" id="submit" value="Submit">
+                    </div>
+                </form>
+             </main>
+        </div>
+    </body>
+</html>

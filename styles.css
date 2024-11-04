@@ -1,0 +1,130 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f3e8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #4c3c72;
+}
+
+#survey-form {
+    background: #ffffff;
+    padding: 2rem;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#title {
+    font-size: 1.8rem;
+    color: #4c3c72;
+}
+
+#description {
+    font-size: 1rem;
+    color: #6b5a8a;
+    margin-top: 0.5rem;
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    color: #6b5a8a;
+    margin-bottom: 0.5rem;
+}
+
+/* Input styling */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.5rem;
+    border: 1px solid #d8c6f7;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #f7f2fc;
+    color: #4c3c72;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 0.3rem; /* Ridotto per maggiore compattezza */
+    transform: scale(1.2);
+    accent-color: #b19cd9;
+}
+
+/* Stack radio and checkboxes vertically */
+div.checkbox-group,
+div.radio-group {
+    display: flex;
+    flex-direction: column; /* Organizza gli elementi in colonna */
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+input[type="submit"] {
+    background-color: #b19cd9;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #a17fc2;
+}
+
+div {
+    margin-bottom: 1rem;
+}
+
+textarea {
+    resize: vertical;
+    background-color: #f7f2fc;
+}
+
+p {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #4c3c72;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    #survey-form {
+        padding: 1.5rem;
+    }
+
+    #title {
+        font-size: 1.5rem;
+    }
+
+    input[type="submit"] {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+}
